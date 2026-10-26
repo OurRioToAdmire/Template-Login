@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/interpol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OBSTACLE 1"
+            android:textSize="40dp">
+
+        </TextView>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/namelay"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            app:helperTextEnabled="true"
+            app:helperText="Su usuario"
+            app:endIconMode="clear_text"
+            app:startIconDrawable="@drawable/baseline_person_24">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="text"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/agelay"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="Edad"
+            app:helperTextEnabled="true"
+            app:helperText="Tu edad actual"
+            android:maxLength="3"
+            app:endIconMode="clear_text"
+            app:startIconDrawable="@drawable/baseline_child_care_24">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/age"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="number"/>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/RFClay"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="RFC"
+            app:helperTextEnabled="true"
+            app:helperText="RFC del SAT"
+            android:textAllCaps="true"
+            app:endIconMode="clear_text"
+            app:startIconDrawable="@drawable/baseline_document_scanner_24">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/RFC"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:maxLength="10"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/telefonolay"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="Telefono"
+            app:helperTextEnabled="true"
+            app:helperText="Tu numero Telefonico"
+            android:inputType="number"
+            app:endIconMode="clear_text"
+            app:startIconDrawable="@drawable/baseline_phone_24">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/telefono"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:maxLength="10"
+                android:inputType="number"
+                />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/fechalay"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="Fecha de Nacimiento"
+            app:helperTextEnabled="true"
+            app:helperText="Tu fecha de nacimiento"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            app:endIconMode="clear_text"
+            app:startIconDrawable="@drawable/baseline_calendar_month_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/fecha"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="date"/>
+</com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <Spinner
+            android:id="@+id/espinner"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            />
+        <Spinner
+            android:id="@+id/city"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/innomlay"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="Ingresa el texto"
+            app:helperTextEnabled="true"
+            app:helperText="Tu nombre completo"
+            app:counterMaxLength="20"
+            app:endIconMode="clear_text"
+            app:startIconDrawable="@drawable/ic_android_black_24dp"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/innom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inpaswelay"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="Ingresa la password"
+            app:helperTextEnabled="true"
+            app:helperText="Contra"
+            app:endIconMode="password_toggle"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inpaswe"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="numberPassword"
+                app:counterMaxLength="4">
+
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/obstacle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="SAY HELLO TO THE ANGELS">
+
+        </Button>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
